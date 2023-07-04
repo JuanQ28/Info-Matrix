@@ -78,20 +78,100 @@ header .container{
   align-items: center;
 }
 
-header .container .logo{
-  width: 300px;
+header .container:nth-child(2) nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header .container nav a{
+header .container h1{
+  display: inline;
+}
+
+.container-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container-header p{
+  font-size: 80px;
+  margin: 0;
+  color: white;
+}
+
+.container-header h1{
+  font-size: 25px;
+  margin: 0;
+  color: white;
+}
+
+header .container .logo{
+  width: 100px;
+  padding: 10px 0;
+}
+
+header nav a.work{
   margin: 0 0 0 15px;
   font-size: 13px;
   color: #fff;
   font-weight: bold;
   transition: color 0.5s linear 0.2s;
+  padding: 10px 0;
 }
 
-header .container nav a:hover,focus{
+header nav a.work.last{
+  margin: 0 15px 0 15px;
+}
+
+header nav a:hover,focus{
   color: #d1d3d4;
+}
+
+.dropdown{
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content{
+  z-index: 1;
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown p{
+  font-size: 13px;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.5s linear 0.2s;
+}
+
+.dropdown p:hover,focus{
+  color: #d1d3d4;
+}
+
+.dropdown-content a{
+  display: block;
+  color:#00ad00;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover{
+  color: #FFFFFF;
+  background-color: #00ad00;
 }
 
 .seccion{
