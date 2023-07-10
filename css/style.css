@@ -3,9 +3,8 @@
 
 *
 {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-
 
 
 body{
@@ -48,6 +47,35 @@ a{
   position: relative;
 }
 
+.seccion{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.columna{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.columna-25{
+ width: 25%;
+}
+
+.columna-33{
+  width: 33.33%;
+}
+
+.columna-66{
+  width: 66.33%;
+}
+
 .cuadrado-perfecto
 {
   width: 100%;
@@ -69,60 +97,55 @@ a{
 
 header{
   box-shadow: 0px 5px 10px rgb(140, 141, 143, 50%);
-  background-color: #00ad00;
+  background-color: white;
 }
 
-header .container{
+header .columna-33{
+  max-height: 150px;
+}
+
+header .container, header .container-fluid{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header .container:nth-child(2) nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-header .container h1{
-  display: inline;
-}
-
-.container-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.container-header p{
-  font-size: 80px;
-  margin: 0;
-  color: white;
-}
-
-.container-header h1{
-  font-size: 25px;
-  margin: 0;
-  color: white;
-}
-
-header .container .logo{
-  width: 100px;
+header .container .logo1{
+  width: 200px;
   padding: 10px 0;
+}
+
+header .container .logo2{
+  width: 200px;
+  padding: 10px 0;
+}
+
+header .container .logo3{
+  width: 150px;
+  padding: 10px 0;
+}
+
+header nav{
+  background-color: #39a900;
 }
 
 header nav a.work{
   margin: 0 0 0 15px;
   font-size: 13px;
-  color: #fff;
+  color: white;
   font-weight: bold;
-  transition: color 0.5s linear 0.2s;
+  transition: color 0.2s linear 0.2s;
   padding: 10px 0;
 }
 
+
 header nav a.work.last{
   margin: 0 15px 0 15px;
+} 
+
+header nav a.work.first{
+  margin: 0 0 0 15px;
 }
 
 header nav a:hover,focus{
@@ -174,33 +197,13 @@ header nav a:hover,focus{
   background-color: #00ad00;
 }
 
-.seccion{
-  padding-top: 60px;
-  padding-bottom: 60px;
+.text-n{
+  font-size: 2em;
+  text-align: justify;
 }
 
-.row{
+#categorias{
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.columna{
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.columna-25{
- width: 25%;
-}
-
-.columna-33{
-  width: 33.33%;
-}
-
-.columna-66{
-  width: 66.33%;
 }
 
 #categorias .bloque-servicio{
@@ -230,11 +233,23 @@ header nav a:hover,focus{
   margin-bottom: 0px;
 }
 
+.titulo-principal{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Work Sans";
+}
+
 .container .titulo{
   padding-top: 40px;
   font-size: 30px;
   text-align: center;
   font-family: "Work Sans";
+}
+
+.subtitulo{
+  font-size: 25px;
 }
 
 .container .separador{
@@ -277,6 +292,13 @@ header nav a:hover,focus{
     display: none;
 }
 
+#creditos{
+  padding-top: 0;
+}
+
+#creditos .container .titulo{
+  padding-top: 0;
+}
 
 #creditos .container:nth-child(2){
   display: flex;
@@ -286,23 +308,59 @@ header nav a:hover,focus{
 }
 
 #creditos .container:nth-child(2) img{
-  width: 400px;
+  max-width: 300px;
+  padding: 10px;
 }
 
+
+/* semillas */
+
+#semillas-inscripcion{
+  padding-top: 20px;
+}
+
+.link{
+  font-weight: bold;
+  color: #39a900;
+}
+
+.link:hover{
+  color: #016e3c;
+  text-decoration:underline;
+}
+
+/* semillas */
+
+/* iv encuentro */
+
+#tematicas-encuentro.seccion, #participacion-encuentro.seccion, #encuentro-inscripcion{
+padding-top: 20px;
+}
+
+/* iv encuentro */
+
 footer.seccion{
-  background-color: #00ad00;
+  background-color: #39a900;
   color: white;
   padding-bottom: 0;
   padding-top: 10px;
 }
 
-footer.seccion .container .row .columna{
-  text-align: center;
+footer .container .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
+footer .container .row img{
+  height: 100px;
+  width: auto;
+}
 
-footer.seccion .columna{
-  padding-bottom: 20px;
+footer .container .row p{
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .barra-footer
