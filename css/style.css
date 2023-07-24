@@ -110,20 +110,38 @@ header .container, header .container-fluid{
   align-items: center;
 }
 
+header .container .logo{
+  width: 33%;
+  display: flex;
+  align-items: center;
+}
+
+header .logos .logo img{
+  width: 50%;
+  max-height: 150px;
+  object-fit: contain;
+}
 
 header .container .logo1{
-  width: 200px;
+/*   width: 33.3%; */
   padding: 10px 0;
+  justify-content: flex-start;
 }
 
 header .container .logo2{
-  width: 200px;
+/*   width: 33.3%; */
   padding: 10px 0;
+  justify-content: center;
+}
+
+header .container .logo2 img{
+  width: 70%;
 }
 
 header .container .logo3{
-  width: 150px;
+/*   width: 33.3%; */
   padding: 10px 0;
+  justify-content: flex-end;
 }
 
 header nav{
@@ -200,6 +218,19 @@ header nav a:hover,focus{
 .text-n{
   font-size: 2em;
   text-align: justify;
+}
+
+.seccion.apertura-imagen .container{
+  display: flex;
+  justify-content: center;
+}
+
+.seccion.apertura-imagen .container img{
+  width: 60%;
+}
+
+.seccion.apertura-imagen{
+  padding-bottom: 0;
 }
 
 #categorias{
@@ -339,28 +370,48 @@ padding-top: 20px;
 
 /* iv encuentro */
 
+.columna-50{
+  width: 50%;
+}
+
 footer.seccion{
-  background-color: #39a900;
-  color: white;
+  border-top: 10px solid #39a900;
   padding-bottom: 0;
-  padding-top: 10px;
+  padding-top: 0;
 }
 
-footer .container .row{
+footer .container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 30px;
 }
 
-footer .container .row img{
-  height: 100px;
-  width: auto;
+footer .container .columna-50{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-footer .container .row p{
-  font-size: 13px;
+footer .container .columna-50.primera{
+  border-right: 10px solid #39a900;
+}
+
+footer .container .columna-50 .contenedor-logos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .container .columna-50 p{
+  color: #39a900;
   font-weight: bold;
+}
+
+footer .container .columna-50 .contenedor-logos img{
+  width: 50%;
+  object-fit: contain;
+  max-height: 150px;
 }
 
 .barra-footer
