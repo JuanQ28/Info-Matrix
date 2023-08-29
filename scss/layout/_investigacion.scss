@@ -1,0 +1,89 @@
+.investigacion{
+    margin-top: 50px;
+    &_principal{
+        h1{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        p{
+            margin-bottom: 50px;
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    }
+    &_contenido{
+        &_tematicas{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            h2{
+                text-align: center;
+            }
+            hr{
+                margin-bottom: 50px;
+                align-self: center;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                font-size: 1.5rem;
+            }
+        }
+        &_participacion1{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            h2{
+                text-align: center;
+            }
+            hr{
+                margin-bottom: 50px;
+                align-self: center;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        &_participacion2{
+            display: flex;
+            flex-direction: column;
+            h3{
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            p{
+                font-size: 1.5rem;
+                text-align: justify;
+            }
+            a{
+                margin-bottom: 10px;
+                align-self: center;
+                margin-top: 10px;
+                text-decoration: none;
+                font-size: 2rem;
+                font-weight: bold;
+                color: $verde-principal;
+                background-image: linear-gradient($verde-principal, rgb(3, 95, 3));
+                background-repeat: no-repeat;
+                background-position: 50% 100%;
+                background-size: 0% 10%;
+                transition: 0.5s;
+                &:hover{
+                    background-size: 100% 10%;
+                }
+            }
+            p:nth-child(4){
+                margin-top: 16px;
+                text-align: center;
+                span{
+                    font-weight: bold;
+                    transition: 0.5s all;
+                    &:hover{
+                        color: $verde-principal;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

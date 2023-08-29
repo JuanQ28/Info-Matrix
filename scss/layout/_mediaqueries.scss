@@ -1,0 +1,319 @@
+@media screen and (max-width: 995px){
+    .ponentes{
+        &_card{
+            height: 420px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .semillas{
+        &_categorias{
+            &_container{
+                &_card{
+                    &_inner{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        height: 25vh;
+        &_container_logos{
+            /* display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 50%);
+            grid-template-areas:
+            'sennova sennova'
+            'sena giacidt'
+            ; */
+            align-items: center;
+            justify-items: center;
+            &_logo:nth-child(1){
+                grid-area: sena;
+                width: 25%;
+            }
+            &_logo:nth-child(2){
+                grid-area: sennova;
+                width: 50%;
+            }
+            &_logo:nth-child(3){
+                grid-area: giacidt;
+                width: 25%;
+            }
+        }
+    }
+    .apertura{
+        &_img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .ponentes{
+        &_card{
+            height: 500px;
+        }
+    }
+    .semillas{
+        &_categorias{
+            &_container{
+                &_card{
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 702px){
+    .programacion{
+        &_tabla{
+            &_dia{
+                font-size: 1.8rem;
+            }
+            &_info{
+                font-size: 1.6rem;
+            }
+            &_hora{
+                font-size: 1.2rem;
+                width: 20%;
+            }
+            &_evento{
+                width: 80%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:581px){
+    .programacion{
+        &_tabla{
+            &_dia{
+                font-size: 1.8rem;
+            }
+            &_info{
+                font-size: 1.6rem;
+            }
+            &_hora{
+                font-size: 1.2rem;
+                width: 25%;
+            }
+            &_evento{
+                width: 75%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 547px){
+    .semillas{
+        &_categorias{
+            &_container{
+                &_card{
+                    height: 320px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 474px){
+    .programacion{
+        &_tabla{
+            &_dia{
+                font-size: 1.7rem;
+            }
+            &_info{
+                font-size: 1.5rem;
+            }
+            &_hora{
+                font-size: 1.1rem;
+                width: 30%;
+            }
+            &_evento{
+                width: 70%;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .header{
+        margin-bottom: 164px;
+        .navbar{
+            width: 100%;
+            &-brand{
+                height: 100%;
+                width: 100%;
+                white-space: normal;
+                p{
+                    text-align: center;
+                    max-width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+            .container-fluid{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .principal_contenido{
+        &_data{
+            font-size: 1.2rem;
+        }
+    }
+
+    .semillas{
+        &_principal{
+            p{
+                font-size: 1.2rem;
+                text-align: justify;
+            }
+        }
+        &_categorias{
+            &_container{
+                &_card{
+                    height: 400px;
+                }
+            }
+        }
+        &_metodologia{
+            p{
+                font-size: 1.2rem;
+            }
+            &_link{
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    .investigacion{
+        &_principal{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        &_contenido{
+            &_tematicas{
+                ul{
+                    font-size: 1.2rem;
+                }
+            }
+            &_participacion1{
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+            &_participacion2{
+                p{
+                    font-size: 1.2rem;
+                }
+                a{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header{
+        height: 32vh;
+        &_container_logos{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 50%);
+            grid-template-areas: 
+            'sennova sennova'
+            'sena giacidt'
+            ;
+            gap: 0;
+            padding: 0;
+            &_logo:nth-child(1){
+                width: 30%;
+                grid-area: sena;
+            }
+            &_logo:nth-child(2){
+                width: 40%;
+                grid-area: sennova;
+            }
+            &_logo:nth-child(3){
+                width: 30%;
+                grid-area: giacidt;
+            }
+            &_logo{
+                padding: 5px;
+                img{
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 385px){
+    .programacion{
+        &_tabla{
+            &_dia{
+                font-size: 1.5rem;
+            }
+            &_info{
+                font-size: 1.3rem;
+            }
+            &_hora{
+                font-size: 1rem;
+                width: 35%;
+            }
+            &_evento{
+                width: 65%;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 374px){
+    .header{
+        margin-bottom: 194px;
+    }
+}
+
+@media screen and (max-width: 210px){
+    .header{
+        &_container_logos{
+            &_logo:nth-child(1){
+                width: 100%;
+            }
+            &_logo:nth-child(2){
+                width: 100%;
+            }
+            &_logo:nth-child(3){
+                width: 100%;
+            }
+            &_logo{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

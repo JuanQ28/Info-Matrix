@@ -1,0 +1,36 @@
+.apertura{
+    &_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 70%;
+        }
+    }
+}
+
+.principal_contenido{
+    margin-top: 50px;
+    &_sub{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    &_iframe{
+        margin: 50px 0;
+        iframe{
+            width: 100%;
+            height: 500px;
+        }
+    }
+    &_data{
+        font-size: 1.5rem;
+        text-align: justify;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}

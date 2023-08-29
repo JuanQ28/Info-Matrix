@@ -1,101 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoMatrix</title>
-
-    <link rel="shorcut icon" href="data/logo-window.png"></link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shorcut icon" href="assets/logo-window.png"></link>
     <script src="https://kit.fontawesome.com/02fc72517f.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-
-    <header>
-      <div class="container logos">
-            <a href="index.html" class="logo logo1">
-              <img src="/data/Logosimbolo-SENA-PRINCIPAL.png" alt="Logo-Sennova">
+</head>
+<body>
+    <header class="header container-fluid">
+        <div class="header_container_logos">
+            <a href="index.html" class="header_container_logos_logo">
+                <img src="assets/Logosimbolo-SENA-PRINCIPAL.png" alt="logo-sena">
             </a>
-            <a href="index.html" class="logo logo2">
-              <img src="/data/LOGO SENNOVA_Mesa de trabajo 1.png" alt="Sena-Innova">
+            <a href="index.html" class="header_container_logos_logo">
+                <img src="assets/LOGO SENNOVA_Mesa de trabajo 1.png" alt="logo-sennova">
             </a>
-            <a href="index.html" class="logo logo3">
-              <img src="/data/LOGOTIPO GIACIDT-01.jpg" alt="Logo-Grupos">
+            <a href="index.html" class="header_container_logos_logo">
+                <img src="assets/LOGOTIPO GIACIDT-01.jpg" alt="logo-giacidt">
             </a>
-      </div>
-      <!-- <div class="container"> -->
-        <nav class="container-fluid">
-          <div class="container">            
-            <a class="work first" href="/SUB-PAGE/Ponencias.html">PONENCIAS<br>MAGISTRALES</a>
-            <a class="work" href="/SUB-PAGE/Semillas.html">ENCUENTRO SEMILLAS<br>SOLACYT</a>
-            <a class="work" href="/SUB-PAGE/IVencuentro.html">IV ENCUENTRO<br>GRUPOS DE INVESTIGACIÓN</a>
-            <a class="work" href="/SUB-PAGE/Workshop.html">WORKSHOP</a>
-            <a class="work" href="/SUB-PAGE/Feria.html">FERIA DE<br>EMPRENDIMIENTO</a>
-            <a class="work" href="/SUB-PAGE/Programacion.html">PROGRAMACION</a>
-            <div class="dropdown">
-              <p class="work last">EVENTOS<br>ANTERIORES</p>
-              <div class="dropdown-content">
-                <a href="/SUB-PAGE/ANTERIORES/evento2018.html">Memorias 2018</a>
-                <a href="/SUB-PAGE/ANTERIORES/evento2018.html">Memorias 2017</a>
-              </div>
+        </div>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <p>
+                        Redes Unidas
+                        Para el Conocimiento
+                    </p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Redes Unidas
+                            Para el Conocimiento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="pages/ponencias.html">PONENCIAS MAGISTRALES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/semillas.html">ENCUENTRO SEMILLAS SOLACYT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/investigacion.html">IV ENCUENTRO GRUPOS DE INVESTIGACIÓN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WORKSHOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FERIA DE EMPRENDIMIENTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/programacion.html">PROGRAMACIÓN</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                EVENTOS ANTERIORES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">MEMORIAS 2019</a></li>
+                                    <li><a class="dropdown-item" href="#">MEMORIAS 2018</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </nav>
-      <!-- </div> -->
     </header>
-
     <main>
-
-      <section class="seccion apertura-imagen">
-        <div class="container">
-          <img src="data/LOGO SENA INNOVA FINAL_2023.png" alt="Sena-Innova">
-        </div>
-      </section>
-
-      <section class="seccion" id="apertura">
-        <div class="container">
-          <p class="text-n">
-            Con el propósito de divulgar avances de Investigación Aplicada, Desarrollo Tecnológico e Innovación, el Centro Industrial y del Desarrollo Tecnológico le invita a participar de su evento “Redes unidas para el Conocimiento” en su XI Versión, a realizarse los días <b>11 y 12 de octubre de 2023</b> en la carrera 28 56-10, barrio Galán Gómez; Barrancabermeja, Santander. El evento, que está dirigido al sector Empresarial y Académico incluye: IV Encuentro de grupos de Investigación, V Encuentro Inter semilleros Semillas – SOLACyT y  Rueda de Conferencias. 
-          </p>
-
-          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Barrancabermeja, Carrera 28 56-10&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://thepasswordgame.com/">The Password Game</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
-
-          <p class="text-n">
-            Este evento, organizado por el grupo de investigación <b>GIACIDT</b> busca fomentar la cultura de I+D+i y la gestión del conocimiento articulando sus resultados con experiencias de la academia local y la transferencia al sector productivo de una manera incluyente, generando conciencia de la importancia que tiene para la Región la investigación, el desarrollo tecnológico y la innovación al aportar valor a los procesos de Competitividad y Productividad; el evento cuenta además con memorias digitales con registro ISBN. 
-          </p>
-        </div>
-      </section>
-      
+        <section class="container-fluid apertura">
+            <article class="apertura_img">
+                <img src="assets/LOGO SENA INNOVA FINAL_2023.png" alt="logo-senainnova">
+            </article>
+        </section>
+        <section class="principal_contenido">
+            <article class="container principal_contenido_data">
+                <p>
+                    Con el propósito de divulgar avances de Investigación Aplicada, Desarrollo Tecnológico e Innovación, el Centro Industrial y del Desarrollo Tecnológico le invita a participar de su evento “Redes unidas para el Conocimiento” en su XI Versión, a realizarse <b>18 y 19 de octubre de 2023</b> los días  en la carrera 28 56-10, barrio Galán Gómez; Barrancabermeja, Santander. El evento, que está dirigido al sector Empresarial y Académico incluye: IV Encuentro de grupos de Investigación, V Encuentro Inter semilleros Semillas – SOLACyT y Rueda de Conferencias.
+                </p>
+            </article>
+            <article class="container principal_contenido_sub">
+                <h2>Lugar del Evento</h2>
+                <hr>
+            </article>
+            <article class="container_fluid principal_contenido_iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.516329522992!2d-73.85393162615053!3d7.065971816624122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e42eb57bf3f71ff%3A0x944edf6bddd8ccc5!2sSENA%20-%20Centro%20Industrial%20y%20del%20Desarrollo%20Tecnol%C3%B3gico!5e0!3m2!1ses-419!2sco!4v1693015248503!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            <article class="container principal_contenido_data">
+                <p>
+                    Este evento, organizado por el grupo de investigación <b>GIACIDT</b> busca fomentar la cultura de I+D+i y la gestión del conocimiento articulando sus resultados con experiencias de la academia local y la transferencia al sector productivo de una manera incluyente, generando conciencia de la importancia que tiene para la Región la investigación, el desarrollo tecnológico y la innovación al aportar valor a los procesos de Competitividad y Productividad; el evento cuenta además con memorias digitales con registro ISBN. 
+                </p>
+            </article>
+        </section>
     </main>
-    
-    <footer class="seccion">
-      <div class="container">
-        <div class="columna-50 primera">
-          <p class="text-n">Organiza:</p>
-          <div class="contenedor-logos">
-            <img src="data/Logosimbolo-SENA-PRINCIPAL.png" alt="Logo-Sena">
-            <img src="data/LOGO SENNOVA_Mesa de trabajo 1.png" alt="Logo-Sennova">
-            <img src="data/logo tic.png" alt="Logo-TIC">
-            <img src="data/LOGOTIPO GIACIDT-01.jpg" alt="">
-          </div>
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <h2>Organiza:</h2>
+            </div>
+            <div class="col-6">
+                <h2>Con apoyo de:</h2>
+            </div>
         </div>
-        <div class="columna-50">
-          <p class="text-n">Con apoyo de:</p>
-        </div>
-      </div>
-      <div class="barra-footer">
-        &copy; Derechos Reservados - 2023
-      </div>
     </footer>
-  </body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
 </html>

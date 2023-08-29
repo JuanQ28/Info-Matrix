@@ -1,0 +1,128 @@
+.semillas{
+    &_principal{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        h1{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        p{
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    }
+    &_categorias{   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+        hr{
+            margin-bottom: 50px;
+        }
+        h2{
+            text-align: center;
+        }
+        &_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+            &_card{
+                padding: 20px;
+                width: 50%;
+                height: 350px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &_inner{
+                    width: 80%;
+                    @include luz(centro);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    height: 100%;
+                    gap: 10px;
+                    padding: 10px;
+                    transition: all 0.5s;
+                    i{
+                        font-size: 60px;
+                        color: $verde-principal;
+                    }
+                    h3{
+                        text-align: center;
+                        color: $verde-principal;
+                    }
+                    p{
+                        text-align: center;
+                        margin-bottom: 0;
+                        font-size: 1.1rem;
+                    }
+                    &:hover{
+                        transform: translateY(-20px);
+                    }
+                }
+            }
+        }
+    }   
+    &_metodologia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            text-align: center;
+        }
+        hr{
+            margin-bottom: 50px;
+        }
+        p{
+            font-size: 1.5rem;
+            text-align: justify;
+            margin-bottom: 0;
+        }
+        &_lista{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px 10px;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &_link{
+            margin-top: 10px;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bold;
+            color: $verde-principal;
+            background-image: linear-gradient($verde-principal, rgb(3, 95, 3));
+            background-repeat: no-repeat;
+            background-position: 50% 100%;
+            background-size: 0% 10%;
+            transition: 0.5s;
+            &:hover{
+                background-size: 100% 10%;
+            }
+        }
+        p:nth-child(7){
+            margin-top: 16px;
+                span{
+                    font-weight: bold;
+                    transition: 0.5s all;
+                    &:hover{
+                        color: $verde-principal;
+                        cursor: pointer;
+                    }
+                }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.programacion{
+    margin-top: 50px;
+    h1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &_tabla{
+        width: 100%;
+        border-spacing: 0px;
+            border: 1px solid #27461f;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+        th,td{
+            padding: 10px;
+            border: 1px solid #27461f;
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+        &_dia{
+            background: #016e3c;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+        &_info{
+            background: #008550;
+            color: white;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        &_hora{
+            background: #88cb66;
+            color: white;
+            font-size: 1.5rem;
+            width: 20%;
+            text-align: center;
+        }
+        &_evento{
+            width: 80%;
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    }
+}

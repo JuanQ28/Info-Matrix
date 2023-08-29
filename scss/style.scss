@@ -1,0 +1,16 @@
+/* base */
+@import 'base/reset';
+@import 'base/vars';
+@import 'base/utilities';
+
+/* components */
+@import 'components/navbar';
+@import 'components/footer';
+
+/* layout */
+@import 'layout/index';
+@import 'layout/ponencias.scss';
+@import 'layout/semillas';
+@import 'layout/investigacion';
+@import 'layout/programacion';
+@import 'layout/mediaqueries';
