@@ -110,6 +110,9 @@ h3 {
   position: static;
   width: 100%;
   background-color: #39a900;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   box-shadow: 0px 5px 10px 0px rgba(140, 141, 143, 0.5);
 }
 .header .navbar-brand {
@@ -145,7 +148,7 @@ h3 {
   justify-content: center;
 }
 .apertura_img img {
-  width: 70%;
+  width: 50%;
 }
 
 .principal_contenido {
@@ -516,6 +519,11 @@ h3 {
   text-align: justify;
 }
 
+@media screen and (max-width: 1409px) {
+  .header {
+    margin-bottom: 122px;
+  }
+}
 @media screen and (max-width: 995px) {
   .ponentes_card {
     height: 420px;
@@ -557,7 +565,67 @@ h3 {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 0 !important;
+  }
+  .navbar .container-fluid .navbar-brand {
+    display: none;
+  }
+  .navbar .container-fluid .offcanvas-body {
+    box-sizing: border-box;
+  }
+  .navbar .container-fluid .offcanvas-body .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    padding-right: 0 !important;
+    gap: 15px;
+  }
+  .navbar .container-fluid .offcanvas-body .navbar-nav .dropdown {
+    padding-right: 10px !important;
+  }
+  .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item {
+    width: 14.2857143%;
+  }
+  .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    width: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item ul li a {
+    font-weight: normal;
+    color: #000000;
+  }
+}
+@media screen and (max-width: 950px) {
+  .header {
+    margin-bottom: 200px;
+  }
+  .navbar .container-fluid .offcanvas-body .navbar-nav {
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+  .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item {
+    width: 28.5714286% !important;
+  }
+  .navbar .container-fluid .offcanvas-body .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header {
+    margin-bottom: 224px;
+  }
+}
 @media screen and (max-width: 767px) {
+  .header {
+    margin-bottom: 108px;
+  }
   .ponentes_card {
     height: 500px;
   }

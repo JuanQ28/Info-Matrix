@@ -41,6 +41,9 @@
         position: static;
         width: 100%;
         background-color: $verde-principal;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         @include luz(abajo);
         &-brand{
             font-weight: bold;
