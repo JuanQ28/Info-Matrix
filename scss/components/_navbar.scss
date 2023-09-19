@@ -45,6 +45,9 @@
         align-items: center;
         justify-content: space-between;
         @include luz(abajo);
+        .container-fluid{
+            padding: 0;
+        }
         &-brand{
             font-weight: bold;
         }
@@ -61,9 +64,29 @@
         #offcanvasNavbar{
             transition: 0.5s all;
         }
-        .nav-item.dropdown{
-            .dropdown-menu{
-                transition: 0.5s all;
+        .offcanvas-body{
+            .navbar-nav{
+                gap: 0!important;
+                .nav-item{
+                    width: 12.5%!important;
+                    .nav-link{
+                        transition: 0.5s all;
+                        &:hover{
+                            color: #27461f;
+                        }
+                    }
+                }
+                .nav-item.dropdown{
+                    .dropdown-menu{
+                        .dropdown-item{
+                            transition: 0.5s all; //no sirve
+                        }
+                    }
+                }
+                .nav-item.mark-on{
+                    background-color: white;
+                    color: $verde-principal;
+                }
             }
         }
     }
