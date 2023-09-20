@@ -1,5 +1,31 @@
 .footer{
+    padding: 0!important;
     @include luz(arriba);
     margin-top: 50px;
     padding: 20px 20px;
+    &_container{
+        @include flex-center(column);
+        &_title{
+            width: 100%;
+            background-color: $verde-principal;
+            text-align: center;
+            color: white;
+        }
+        &_img{
+            max-width: 350px;
+            img{
+                width: 100%;
+                margin: 20px 0;
+                animation: soft 10s infinite;
+                animation-delay: 0s;
+            }
+        }
+    }
+    &_barra{
+        width: 100%;
+        background-color: black;
+        @include flex-center(row);
+        height: 25px;
+        color: white
+    }
 }

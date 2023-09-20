@@ -51,6 +51,12 @@
                     transform: scale(1.2);
                 }
             }
+            .ponentes_card_data_texto1{
+                transform: translateY(-200%);
+            }
+            .ponentes_card_data_texto2{
+                transform: translateY(0);
+            }
         }
         &_data{
             display: flex;
@@ -63,14 +69,6 @@
             width: 70%;
             overflow: hidden;
             position: relative;
-            &:hover{
-                .ponentes_card_data_texto1{
-                    transform: translateY(-200%);
-                }
-                .ponentes_card_data_texto2{
-                    transform: translateY(0);
-                }
-            }
             &_texto1{
                 transition: 0.5s all;
                 padding: 20px;

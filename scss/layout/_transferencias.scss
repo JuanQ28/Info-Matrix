@@ -1,0 +1,116 @@
+.transferencias{
+    @include flex-center(column);
+    .tarjetas{
+        @include luz(centro);
+    }
+    p{
+        margin-bottom: 0;
+    }
+    &_emprende1{
+        margin-bottom: 50px;
+        @include flex-center(column);
+        width: 100%;
+        &_img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &_content{
+            width: 100%;
+        }
+    }
+    &_emprende2{
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'img content'
+        'img content'
+        'contact contact'
+        ;
+        &_img{
+            grid-area: img;
+            img{
+                width: 100%;
+            }
+        }
+        &_content{
+            grid-area: content;
+            width: 100%;
+        }
+        &_contact{
+            grid-area: contact;
+            width: 100%;
+        }
+    }
+    &_emprende3{
+        margin-bottom: 50px;
+        @include flex-center(column);
+        &_img{
+            img{
+                width: 100%;
+            }
+        }
+        &_content{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &_emprende4{
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(7, 14.2857143%);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'title title title title title title title'
+        'img img img description description description description'
+        'img img img contact1 contact1 contact2 contact2'
+        ;
+        &_title{
+            grid-area: title;
+            width: 100%;
+        }
+        &_description{
+            grid-area: description;
+            width: 100%;
+        }
+        &_contact1{
+            grid-area: contact1;
+            width: 100%;
+        }
+        &_contact2{
+            grid-area: contact2;
+            width: 100%;
+        }
+        &_img{
+            grid-area: img;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &_emprende5{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'title title'
+        'img description'
+        'contact contact'
+        ;
+        &_title{
+            grid-area: title;
+        }
+        &_img{
+            grid-area: img;
+        }
+        &_description{
+            grid-area: description;
+        }
+        &_contact{
+            grid-area: contact;
+        }
+    }
+}

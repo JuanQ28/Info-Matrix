@@ -34,6 +34,8 @@
                 height: auto;
                 max-height: 100%;
                 object-fit: contain;
+                animation: soft 10s infinite;
+                animation-delay: 0s;
             }
         }
     }
@@ -69,10 +71,12 @@
                 gap: 0!important;
                 .nav-item{
                     width: 12.5%!important;
+                    height: 100%;
+                    @include flex-center(row);
                     .nav-link{
                         transition: 0.5s all;
                         &:hover{
-                            color: #27461f;
+                            color: #143d00;
                         }
                     }
                 }
@@ -83,9 +87,12 @@
                         }
                     }
                 }
-                .nav-item.mark-on{
+                .nav-item.mark_on{
                     background-color: white;
-                    color: $verde-principal;
+                    a{
+                        color: $verde-principal;
+                        /* font-weight: bold; */
+                    }
                 }
             }
         }
