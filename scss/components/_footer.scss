@@ -22,8 +22,9 @@
         }
     }
     &_barra{
+        font-weight: bold;
         width: 100%;
-        background-color: black;
+        background-color: $verde-principal;
         @include flex-center(row);
         height: 25px;
         color: white
